@@ -16476,6 +16476,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
+<part name="TP3" library="testpad" deviceset="TP" device="TP20SQ"/>
+<part name="TP4" library="testpad" deviceset="TP" device="TP20SQ"/>
 </parts>
 <sheets>
 <sheet>
@@ -16535,6 +16537,8 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="SUPPLY9" gate="GND" x="36.83" y="35.56"/>
 <instance part="+3V9" gate="G$1" x="48.26" y="55.88"/>
 <instance part="SUPPLY10" gate="GND" x="-6.35" y="39.37"/>
+<instance part="TP3" gate="G$1" x="93.98" y="81.28" rot="R270"/>
+<instance part="TP4" gate="G$1" x="93.98" y="91.44" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -16574,6 +16578,9 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="78.74" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="TP3" gate="G$1" pin="TP"/>
+<wire x1="91.44" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
+<junction x="78.74" y="81.28"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
@@ -16891,14 +16898,17 @@ SJ4: select address of Temperature Sensor</text>
 </net>
 <net name="REED" class="0">
 <segment>
-<pinref part="TP2" gate="G$1" pin="TP"/>
-<wire x1="78.74" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
-<label x="76.2" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="PB2(SS/OC1B/PCINT2)"/>
 <wire x1="195.58" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
 <label x="198.12" y="81.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<pinref part="TP2" gate="G$1" pin="TP"/>
+<wire x1="78.74" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
+<label x="76.2" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
+<junction x="78.74" y="91.44"/>
 </segment>
 </net>
 <net name="SOLAR_RAW" class="0">
@@ -16957,18 +16967,6 @@ SJ4: select address of Temperature Sensor</text>
 <errors>
 <approved hash="104,1,261.62,81.28,U$1,VCC,+3V3,,,"/>
 <approved hash="104,1,261.62,40.64,U$1,GND1,GND,,,"/>
-<approved hash="104,1,86.36,48.26,IC1,VCC,+3V3,,,"/>
-<approved hash="104,1,27.94,160.02,BAT1,-,GND,,,"/>
-<approved hash="104,1,27.94,170.18,BAT1,+,+3V3,,,"/>
-<approved hash="104,1,264.16,-15.24,IC2,VDD,+3V3,,,"/>
-<approved hash="113,1,-21.3148,-27.94,R2,,,,,"/>
-<approved hash="113,1,73.8971,183.011,JP2,,,,,"/>
-<approved hash="113,1,295.91,70.8321,X1,,,,,"/>
-<approved hash="113,1,65.0452,157.48,R4,,,,,"/>
-<approved hash="113,1,29.6587,165.1,BAT1,,,,,"/>
-<approved hash="113,1,274.32,127.542,SW1,,,,,"/>
-<approved hash="113,1,207.084,-17.78,SJ4,,,,,"/>
-<approved hash="113,1,110.564,-33.02,SJ5,,,,,"/>
 </errors>
 </schematic>
 </drawing>
