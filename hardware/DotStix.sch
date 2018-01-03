@@ -11105,6 +11105,43 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="pusbbutton_4x2_5">
+<packages>
+<package name="PUSHBUTTON_4X2.5">
+<smd name="P$1" x="-1.27" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$2" x="2.032" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-1.27" y1="1.397" x2="2.032" y2="1.397" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.397" x2="2.032" y2="-1.397" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PUSHBUTTON_4X2.5">
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<circle x="-1.778" y="0" radius="0.567959375" width="0.254" layer="94"/>
+<circle x="1.778" y="0" radius="0.567959375" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="0" x2="1.27" y2="2.032" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PUSHBUTTON_4X2.5">
+<gates>
+<gate name="G$1" symbol="PUSHBUTTON_4X2.5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PUSHBUTTON_4X2.5">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11141,6 +11178,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP1" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="TP2" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
+<part name="U$3" library="pusbbutton_4x2_5" deviceset="PUSHBUTTON_4X2.5" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11193,6 +11232,8 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="TP1" gate="G$1" x="81.28" y="81.28" rot="R270"/>
 <instance part="TP2" gate="G$1" x="81.28" y="91.44" rot="R270"/>
 <instance part="SUPPLY5" gate="GND" x="76.2" y="78.74"/>
+<instance part="U$3" gate="G$1" x="78.74" y="154.94"/>
+<instance part="SUPPLY7" gate="GND" x="83.82" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -11238,6 +11279,10 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="78.74" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -11255,12 +11300,16 @@ SJ4: select address of Temperature Sensor</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="157.48" x2="71.12" y2="154.94" width="0.1524" layer="91"/>
-<label x="71.12" y="154.94" size="1.27" layer="95" xref="yes"/>
+<label x="71.12" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="20.32" y1="77.47" x2="11.43" y2="77.47" width="0.1524" layer="91"/>
 <label x="11.43" y="77.47" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="73.66" y1="154.94" x2="71.12" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED" class="0">
