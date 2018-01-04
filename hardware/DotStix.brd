@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.00254" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -40,7 +40,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -1685,6 +1685,8 @@
 <text x="3.0226" y="44.0436" size="1.016" layer="22" rot="MR270" align="center">01/2018</text>
 <text x="2.4892" y="17.145" size="1.016" layer="21" rot="SR90" align="center">HexID</text>
 <rectangle x1="1.3208" y1="20.066" x2="3.7592" y2="24.4856" layer="21"/>
+<text x="-0.06858125" y="59.93891875" size="1.778" layer="48">If you plan on potting the board in transparent epoxy, the battery's max cycle count ist 1000.
+Use a 330mF Supercap instead of battery: DSK-3R3H334T-HL  </text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -3483,9 +3485,9 @@ design rules under a new name.</description>
 <via x="12.1158" y="28.0924" extent="1-16" drill="0.3"/>
 <wire x1="12.1158" y1="28.0924" x2="10.1092" y2="28.0924" width="0.1524" layer="16"/>
 <wire x1="10.1092" y1="28.0924" x2="10.1092" y2="27.6968" width="0.1524" layer="16"/>
-<wire x1="6.3058" y1="31.7074" x2="6.3058" y2="37.2044" width="0.1524" layer="1"/>
-<wire x1="6.3058" y1="37.2044" x2="5.461" y2="37.719" width="0.1524" layer="1"/>
-<via x="5.461" y="37.719" extent="1-16" drill="0.3"/>
+<wire x1="6.3058" y1="31.7074" x2="6.3312" y2="36.798" width="0.1524" layer="1"/>
+<wire x1="6.3312" y1="36.798" x2="6.0452" y2="37.0586" width="0.1524" layer="1"/>
+<via x="6.0452" y="37.0586" extent="1-16" drill="0.3"/>
 <wire x1="2.3622" y1="48.2106" x2="2.3058" y2="48.267" width="0.1524" layer="1"/>
 <via x="17.4498" y="11.2776" extent="1-16" drill="0.3"/>
 <wire x1="17.4498" y1="11.2776" x2="18.8468" y2="11.2776" width="0.1524" layer="1"/>
@@ -3587,7 +3589,7 @@ design rules under a new name.</description>
 <wire x1="2.3622" y1="39.4716" x2="3.2258" y2="38.608" width="0.1524" layer="1"/>
 <via x="3.2258" y="38.608" extent="1-16" drill="0.3"/>
 <wire x1="3.2258" y1="38.608" x2="4.572" y2="38.608" width="0.1524" layer="16"/>
-<wire x1="4.572" y1="38.608" x2="5.461" y2="37.719" width="0.1524" layer="16"/>
+<wire x1="4.572" y1="38.608" x2="6.0452" y2="37.0586" width="0.1524" layer="16"/>
 <wire x1="7.5692" y1="28.5242" x2="7.5692" y2="29.6672" width="0.1524" layer="16"/>
 <wire x1="7.5692" y1="29.6672" x2="7.5184" y2="29.718" width="0.1524" layer="16"/>
 <via x="7.5184" y="29.718" extent="1-16" drill="0.3"/>

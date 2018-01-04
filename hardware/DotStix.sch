@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18746,7 +18746,6 @@ SJ4: select address of Temperature Sensor</text>
 <text x="172.72" y="10.16" size="3.81" layer="95">MCU</text>
 <text x="259.08" y="10.16" size="3.81" layer="95">Radio</text>
 <wire x1="312.42" y1="93.98" x2="312.42" y2="12.7" width="0.1524" layer="95" style="longdash"/>
-<text x="175.26" y="0" size="1.016" layer="91" align="center">TMP102 or TMP112 (high acc +/-0.5°)</text>
 <text x="21.59" y="152.4" size="1.27" layer="91">Blue</text>
 <text x="38.1" y="152.4" size="1.27" layer="91" rot="R90">Green</text>
 <text x="47.498" y="152.4" size="1.27" layer="91">Red</text>
@@ -19188,46 +19187,6 @@ SJ4: select address of Temperature Sensor</text>
 <label x="198.12" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-</nets>
-</sheet>
-<sheet>
-<plain>
-<text x="2.54" y="81.28" size="1.6764" layer="91">Sensor / Memory</text>
-<text x="27.94" y="81.28" size="1.6764" layer="91">Part #</text>
-<text x="48.26" y="81.28" size="1.6764" layer="91">I2C Address</text>
-<text x="5.08" y="73.66" size="1.27" layer="91">RGB</text>
-<text x="27.94" y="73.66" size="1.27" layer="91">ISL29125</text>
-<text x="48.26" y="73.66" size="1.27" layer="91">1000100D</text>
-<text x="5.08" y="68.58" size="1.27" layer="91">UV</text>
-<text x="27.94" y="68.58" size="1.27" layer="91">SI1145</text>
-<text x="48.26" y="68.58" size="1.27" layer="91">1100000D</text>
-<text x="5.08" y="63.5" size="1.27" layer="91">Temperature</text>
-<text x="27.94" y="63.5" size="1.27" layer="91">TMP102/112</text>
-<text x="48.26" y="63.5" size="1.27" layer="91">100100XD</text>
-<text x="5.08" y="58.42" size="1.27" layer="91">9DoF</text>
-<text x="27.94" y="58.42" size="1.27" layer="91">MPU9250</text>
-<text x="48.26" y="58.42" size="1.27" layer="91">110100XD</text>
-<text x="68.58" y="81.28" size="1.778" layer="91">Hex Address / Tested?</text>
-<text x="76.2" y="73.66" size="1.27" layer="91">0x44 / yes</text>
-<text x="76.2" y="68.58" size="1.27" layer="91">0x60 / yes</text>
-<text x="5.08" y="53.34" size="1.27" layer="91">Temp/Pressure</text>
-<text x="27.94" y="53.34" size="1.27" layer="91">BMP18</text>
-<text x="48.26" y="53.34" size="1.27" layer="91">1110111D</text>
-<text x="76.2" y="53.34" size="1.27" layer="91">0x77 / no ??</text>
-<text x="76.2" y="63.5" size="1.27" layer="91">0x48 / yes, temperature-dependent values, incorrect (70 degC)</text>
-<text x="5.08" y="48.26" size="1.27" layer="91">EEPROM 1Mbit</text>
-<text x="27.94" y="48.26" size="1.27" layer="91">CAT24M01 </text>
-<text x="48.26" y="48.26" size="1.27" layer="91">1010XXXD</text>
-<text x="76.2" y="48.26" size="1.27" layer="91">0x50 &amp; 0x51 (a16 bit) / yes</text>
-<text x="48.26" y="78.74" size="1.016" layer="91">D = Direction</text>
-<text x="76.2" y="58.42" size="1.27" layer="91">0x68 / yes</text>
-<text x="5.08" y="27.94" size="1.778" layer="91">Ext Oscillator - Low Fuse : 0x5F</text>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
 </nets>
 </sheet>
 </sheets>
