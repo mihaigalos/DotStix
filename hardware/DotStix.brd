@@ -1684,6 +1684,9 @@
 <rectangle x1="1.50368125" y1="20.200621875" x2="3.94208125" y2="24.620221875" layer="21"/>
 <text x="-0.06858125" y="59.93891875" size="1.778" layer="48">If you plan on potting the board in transparent epoxy, the battery's max cycle count ist 1000.
 Use a 330mF Supercap instead of battery: DSK-3R3H334T-HL  </text>
+<text x="3.3147" y="6.860540625" size="1.778" layer="21">+</text>
+<text x="14.76501875" y="6.779259375" size="1.778" layer="21">+</text>
+<text x="9.4615" y="4.17321875" size="1.778" layer="21">-</text>
 </plain>
 <libraries>
 <library name="adafruit">
