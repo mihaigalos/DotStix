@@ -15466,6 +15466,8 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="7pF"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="7pF"/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="&gt;1MΩ"/>
+<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15485,6 +15487,7 @@ SJ4: select address of Temperature Sensor</text>
 <wire x1="312.42" y1="93.98" x2="312.42" y2="12.7" width="0.1524" layer="95" style="longdash"/>
 <wire x1="312.42" y1="190.5" x2="312.42" y2="109.22" width="0.1524" layer="95" style="longdash"/>
 <text x="364.49" y="163.83" size="1.778" layer="91">Sensor</text>
+<text x="69.85" y="81.28" size="1.778" layer="91">Using external weak pullup for really low current</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="170.18" y="60.96"/>
@@ -15510,9 +15513,9 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="JP1" gate="A" x="22.86" y="77.47"/>
 <instance part="+3V7" gate="G$1" x="2.54" y="74.93" rot="R90"/>
 <instance part="SUPPLY2" gate="GND" x="11.43" y="69.85"/>
-<instance part="TP1" gate="G$1" x="81.28" y="81.28" rot="R270"/>
-<instance part="TP2" gate="G$1" x="81.28" y="91.44" rot="R270"/>
-<instance part="SUPPLY5" gate="GND" x="76.2" y="78.74"/>
+<instance part="TP1" gate="G$1" x="81.28" y="55.88" rot="R270"/>
+<instance part="TP2" gate="G$1" x="81.28" y="66.04" rot="R270"/>
+<instance part="SUPPLY5" gate="GND" x="76.2" y="53.34"/>
 <instance part="U$3" gate="G$1" x="78.74" y="154.94"/>
 <instance part="SUPPLY7" gate="GND" x="83.82" y="152.4"/>
 <instance part="D1" gate="G$1" x="1.27" y="40.64" rot="R270"/>
@@ -15521,8 +15524,8 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="D3" gate="G$1" x="25.4" y="45.72"/>
 <instance part="+3V9" gate="G$1" x="36.83" y="53.34"/>
 <instance part="SUPPLY10" gate="GND" x="1.27" y="31.75"/>
-<instance part="TP3" gate="G$1" x="93.98" y="81.28" rot="R270"/>
-<instance part="TP4" gate="G$1" x="93.98" y="91.44" rot="R270"/>
+<instance part="TP3" gate="G$1" x="93.98" y="55.88" rot="R270"/>
+<instance part="TP4" gate="G$1" x="93.98" y="66.04" rot="R270"/>
 <instance part="R3" gate="G$1" x="361.95" y="163.83" rot="R90"/>
 <instance part="R4" gate="G$1" x="361.95" y="153.67" rot="R90"/>
 <instance part="SUPPLY14" gate="GND" x="361.95" y="146.05"/>
@@ -15532,6 +15535,8 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="C7" gate="G$1" x="353.06" y="38.1" rot="R90"/>
 <instance part="C9" gate="G$1" x="353.06" y="53.34" rot="R90"/>
 <instance part="SUPPLY26" gate="GND" x="368.3" y="43.18"/>
+<instance part="R5" gate="G$1" x="78.74" y="71.12" rot="R90"/>
+<instance part="+3V8" gate="G$1" x="78.74" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -15570,10 +15575,10 @@ SJ4: select address of Temperature Sensor</text>
 <segment>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="78.74" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="TP3" gate="G$1" pin="TP"/>
-<wire x1="91.44" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
-<junction x="78.74" y="81.28"/>
+<wire x1="91.44" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
+<junction x="78.74" y="55.88"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
@@ -15742,6 +15747,10 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <wire x1="36.83" y1="50.8" x2="36.83" y2="45.72" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -15809,10 +15818,11 @@ SJ4: select address of Temperature Sensor</text>
 <segment>
 <pinref part="TP4" gate="G$1" pin="TP"/>
 <pinref part="TP2" gate="G$1" pin="TP"/>
-<wire x1="78.74" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
-<label x="76.2" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="91.44" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
-<junction x="78.74" y="91.44"/>
+<wire x1="78.74" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<label x="76.2" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
+<junction x="78.74" y="66.04"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD1(TXD/PCINT17)"/>
