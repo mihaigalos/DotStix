@@ -1661,7 +1661,7 @@
 <rectangle x1="10.0457" y1="9.8679" x2="10.9601" y2="9.8933" layer="22" rot="R180"/>
 <rectangle x1="9.1059" y1="9.8679" x2="9.7917" y2="9.8933" layer="22" rot="R180"/>
 <rectangle x1="7.4803" y1="9.8679" x2="8.6487" y2="9.8933" layer="22" rot="R180"/>
-<text x="5.2324" y="44.0436" size="1.27" layer="22" rot="MR270" align="center">Mihai Galos</text>
+<text x="4.7650375" y="44.0436" size="1.27" layer="22" rot="MR270" align="center">Mihai Galos</text>
 <text x="9.6774" y="11.4046" size="1.016" layer="22" rot="MR0" align="center">DotStix v0.3.1</text>
 <circle x="17.2974" y="30.7848" radius="0.193440625" width="0.1524" layer="21"/>
 <circle x="17.27961875" y="30.7848" radius="0.071840625" width="0.1524" layer="21"/>
