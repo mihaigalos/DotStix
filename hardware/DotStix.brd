@@ -1689,6 +1689,7 @@ Use a 330mF Supercap instead of battery: DSK-3R3H334T-HL  </text>
 <text x="9.4615" y="4.17321875" size="1.778" layer="21">-</text>
 <text x="7.80288125" y="16.499840625" size="0.8128" layer="21" align="center">+</text>
 <text x="0.08381875" y="54.62778125" size="1.778" layer="48">Design rules : 100um width, 0.2mm vias</text>
+<rectangle x1="10.868659375" y1="24.42971875" x2="16.22298125" y2="29.86531875" layer="43"/>
 </plain>
 <libraries>
 <library name="adafruit">
