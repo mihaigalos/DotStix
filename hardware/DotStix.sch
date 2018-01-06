@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18681,10 +18681,10 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="SUPPLY19" gate="GND" x="68.58" y="167.64" rot="R180"/>
 <instance part="SJ1" gate="1" x="88.9" y="148.59"/>
 <instance part="U$3" gate="G$1" x="68.58" y="158.75" rot="R90"/>
-<instance part="RN1" gate="A" x="74.93" y="148.59"/>
-<instance part="RN1" gate="B" x="74.93" y="143.51"/>
-<instance part="RN1" gate="C" x="74.93" y="138.43"/>
-<instance part="RN1" gate="D" x="74.93" y="133.35"/>
+<instance part="RN1" gate="A" x="77.47" y="148.59"/>
+<instance part="RN1" gate="B" x="77.47" y="143.51"/>
+<instance part="RN1" gate="C" x="77.47" y="138.43"/>
+<instance part="RN1" gate="D" x="77.47" y="133.35"/>
 <instance part="RN2" gate="A" x="12.7" y="140.97" rot="R90"/>
 <instance part="RN2" gate="B" x="7.62" y="140.97" rot="R90"/>
 <instance part="RN2" gate="C" x="17.78" y="140.97" rot="R90"/>
@@ -18795,8 +18795,9 @@ SJ4: select address of Temperature Sensor</text>
 <label x="198.12" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="69.85" y1="138.43" x2="66.04" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="138.43" x2="66.04" y2="138.43" width="0.1524" layer="91"/>
 <label x="66.04" y="138.43" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="RN1" gate="C" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="SDA"/>
@@ -18821,12 +18822,13 @@ SJ4: select address of Temperature Sensor</text>
 <label x="11.43" y="77.47" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="69.85" y1="148.59" x2="68.58" y2="148.59" width="0.1524" layer="91"/>
 <label x="66.04" y="148.59" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$3" gate="G$1" pin="P$1"/>
 <wire x1="68.58" y1="148.59" x2="66.04" y2="148.59" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="153.67" x2="68.58" y2="148.59" width="0.1524" layer="91"/>
 <junction x="68.58" y="148.59"/>
+<pinref part="RN1" gate="A" pin="1"/>
+<wire x1="72.39" y1="148.59" x2="68.58" y2="148.59" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RSEL" class="0">
@@ -18945,11 +18947,11 @@ SJ4: select address of Temperature Sensor</text>
 <wire x1="97.79" y1="138.43" x2="97.79" y2="143.51" width="0.1524" layer="91"/>
 <wire x1="97.79" y1="143.51" x2="97.79" y2="148.59" width="0.1524" layer="91"/>
 <wire x1="97.79" y1="148.59" x2="97.79" y2="153.67" width="0.1524" layer="91"/>
-<wire x1="80.01" y1="143.51" x2="97.79" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="143.51" x2="97.79" y2="143.51" width="0.1524" layer="91"/>
 <junction x="97.79" y="143.51"/>
-<wire x1="80.01" y1="138.43" x2="97.79" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="138.43" x2="97.79" y2="138.43" width="0.1524" layer="91"/>
 <junction x="97.79" y="138.43"/>
-<wire x1="80.01" y1="133.35" x2="97.79" y2="133.35" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="133.35" x2="97.79" y2="133.35" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="1" pin="2"/>
 <wire x1="93.98" y1="148.59" x2="97.79" y2="148.59" width="0.1524" layer="91"/>
 <junction x="97.79" y="148.59"/>
@@ -19011,8 +19013,9 @@ SJ4: select address of Temperature Sensor</text>
 <label x="198.12" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="69.85" y1="143.51" x2="66.04" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="143.51" x2="66.04" y2="143.51" width="0.1524" layer="91"/>
 <label x="66.04" y="143.51" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="RN1" gate="B" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="SCL"/>
@@ -19191,7 +19194,7 @@ SJ4: select address of Temperature Sensor</text>
 <net name="N$5" class="0">
 <segment>
 <pinref part="SJ1" gate="1" pin="1"/>
-<wire x1="83.82" y1="148.59" x2="80.01" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="148.59" x2="82.55" y2="148.59" width="0.1524" layer="91"/>
 <pinref part="RN1" gate="A" pin="2"/>
 </segment>
 </net>
@@ -19216,8 +19219,29 @@ SJ4: select address of Temperature Sensor</text>
 </sheet>
 </sheets>
 <errors>
+<approved hash="101,1,69.85,148.59,RN1A,1,,,,"/>
+<approved hash="101,1,69.85,143.51,RN1B,1,,,,"/>
+<approved hash="101,1,69.85,138.43,RN1C,1,,,,"/>
+<approved hash="101,1,69.85,133.35,RN1D,1,,,,"/>
+<approved hash="101,1,-10.16,135.89,RN2D,1,,,,"/>
+<approved hash="101,1,-10.16,146.05,RN2D,2,,,,"/>
 <approved hash="104,1,261.62,81.28,U$1,VCC,+3V3,,,"/>
 <approved hash="104,1,261.62,40.64,U$1,GND1,GND,,,"/>
+<approved hash="104,1,351.79,133.35,IC2,VDD,+3V3,,,"/>
+<approved hash="106,1,147.32,66.04,ADC,,,,,"/>
+<approved hash="106,1,276.86,68.58,ANT,,,,,"/>
+<approved hash="111,1,69.85,148.59,RST,,,,,"/>
+<approved hash="111,1,69.85,143.51,SCL,,,,,"/>
+<approved hash="111,1,69.85,138.43,SDA,,,,,"/>
+<approved hash="113,1,260.35,155.503,U$2,,,,,"/>
+<approved hash="113,1,20.5571,80.1412,JP1,,,,,"/>
+<approved hash="113,1,17.2932,43.18,D2,,,,,"/>
+<approved hash="113,1,25.4,46.2068,D3,,,,,"/>
+<approved hash="113,1,360.955,163.83,R3,,,,,"/>
+<approved hash="113,1,355.549,68.4245,Y1,,,,,"/>
+<approved hash="113,1,349.271,45.72,Y2,,,,,"/>
+<approved hash="113,1,74.93,147.709,RN1,,,,,"/>
+<approved hash="113,1,13.5805,140.97,RN2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
