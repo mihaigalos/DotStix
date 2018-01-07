@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18943,6 +18943,92 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 </deviceset>
 </devicesets>
 </library>
+<library name="CAT24M01YI">
+<packages>
+<package name="TSSOP8">
+<description>&lt;b&gt;Thin Shrink Small Outline Package&lt;/b&gt;&lt;p&gt;
+package type ST</description>
+<wire x1="2.15" y1="2.67" x2="-2.15" y2="2.67" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="2.67" x2="-2.15" y2="-0.13" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="-0.13" x2="2.15" y2="-0.13" width="0.2032" layer="21"/>
+<wire x1="2.15" y1="-0.13" x2="2.15" y2="2.67" width="0.2032" layer="21"/>
+<circle x="-2.185" y="3.16" radius="0.325" width="0" layer="21"/>
+<smd name="SDA" x="2.925" y="0.295" dx="0.35" dy="1.2" layer="1" rot="R90"/>
+<smd name="SCL" x="2.925" y="0.945" dx="0.35" dy="1.2" layer="1" rot="R90"/>
+<smd name="WP" x="2.925" y="1.595" dx="0.35" dy="1.2" layer="1" rot="R90"/>
+<smd name="VCC" x="2.925" y="2.245" dx="0.35" dy="1.2" layer="1" rot="R90"/>
+<smd name="NC" x="-2.925" y="2.245" dx="0.35" dy="1.2" layer="1" rot="R90"/>
+<smd name="A1" x="-2.925" y="1.595" dx="0.35" dy="1.2" layer="1" rot="R90"/>
+<smd name="A2" x="-2.925" y="0.945" dx="0.35" dy="1.2" layer="1" rot="R90"/>
+<smd name="GND" x="-2.925" y="0.295" dx="0.35" dy="1.2" layer="1" rot="R90"/>
+<text x="2.925" y="-0.355" size="1.27" layer="25" rot="R180">&gt;NAME</text>
+<text x="3.25" y="4.195" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+<rectangle x1="2.575" y1="-0.205" x2="2.825" y2="0.795" layer="51" rot="R90"/>
+<rectangle x1="2.575" y1="0.445" x2="2.825" y2="1.445" layer="51" rot="R90"/>
+<rectangle x1="2.575" y1="1.095" x2="2.825" y2="2.095" layer="51" rot="R90"/>
+<rectangle x1="2.575" y1="1.745" x2="2.825" y2="2.745" layer="51" rot="R90"/>
+<rectangle x1="-2.825" y1="1.745" x2="-2.575" y2="2.745" layer="51" rot="R90"/>
+<rectangle x1="-2.825" y1="1.095" x2="-2.575" y2="2.095" layer="51" rot="R90"/>
+<rectangle x1="-2.825" y1="0.445" x2="-2.575" y2="1.445" layer="51" rot="R90"/>
+<rectangle x1="-2.825" y1="-0.205" x2="-2.575" y2="0.795" layer="51" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SERIALEEPROM">
+<wire x1="-10.16" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="6.35" x2="4.826" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="4.826" y1="6.35" x2="4.826" y2="-6.604" width="0.1524" layer="94"/>
+<wire x1="4.826" y1="-6.604" x2="-1.016" y2="-6.604" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-6.604" x2="-2.54" y2="-6.604" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-6.604" x2="-2.54" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="1.016" x2="-2.54" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="1.016" x2="-1.016" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="1.016" x2="-1.016" y2="-6.604" width="0.1524" layer="94"/>
+<text x="3.81" y="-4.826" size="1.778" layer="94" rot="R90">Array</text>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.524" y="-4.826" size="1.778" layer="94" rot="R90">EEPROM</text>
+<pin name="VCC" x="15.24" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="15.24" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="SCL" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="SDA" x="-12.7" y="5.08" length="short"/>
+<pin name="A1" x="-12.7" y="-2.54" length="short"/>
+<pin name="A2" x="-12.7" y="-5.08" length="short"/>
+<pin name="WP" x="15.24" y="0" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CAT24M01" prefix="IC">
+<description>Serial &lt;B&gt;EEPROM&lt;/B&gt;&lt;p&gt;
+1Mb, I2C</description>
+<gates>
+<gate name="G$1" symbol="SERIALEEPROM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TS" package="TSSOP8">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="GND" pad="GND NC"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="WP" pad="WP"/>
+</connects>
+<technologies>
+<technology name="0">
+<attribute name="MF" value="On Semiconductor" constant="no"/>
+<attribute name="MPN" value="24C00T-E/ST" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -19015,6 +19101,9 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0201" value="0.1uF"/>
+<part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
+<part name="IC1" library="CAT24M01YI" deviceset="CAT24M01" device="TS" technology="0"/>
+<part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19036,6 +19125,9 @@ SJ4: select address of Temperature Sensor</text>
 <text x="364.49" y="163.83" size="1.778" layer="91">Sensor</text>
 <text x="69.85" y="81.28" size="1.778" layer="91">Using external weak pullup for really low current</text>
 <text x="407.67" y="171.45" size="1.016" layer="91" align="center">TMP102 or TMP112 (high acc +/-0.5°)</text>
+<wire x1="129.54" y1="-2.54" x2="129.54" y2="-83.82" width="0.1524" layer="95" style="longdash"/>
+<wire x1="223.52" y1="-5.08" x2="223.52" y2="-86.36" width="0.1524" layer="95" style="longdash"/>
+<text x="167.64" y="-81.28" size="3.81" layer="95">Storage</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="170.18" y="60.96"/>
@@ -19106,6 +19198,9 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="+3V13" gate="G$1" x="389.89" y="133.35"/>
 <instance part="SUPPLY28" gate="GND" x="402.59" y="115.57"/>
 <instance part="C1" gate="G$1" x="407.67" y="118.11"/>
+<instance part="SUPPLY9" gate="GND" x="193.04" y="-50.8"/>
+<instance part="IC1" gate="G$1" x="175.26" y="-43.18"/>
+<instance part="+3V14" gate="G$1" x="193.04" y="-27.94"/>
 </instances>
 <busses>
 </busses>
@@ -19215,6 +19310,11 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY9" gate="GND" pin="GND"/>
+<wire x1="190.5" y1="-48.26" x2="193.04" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -19241,6 +19341,11 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="U4" gate="G$1" pin="SDA/SDI"/>
 <wire x1="453.39" y1="120.65" x2="455.93" y2="120.65" width="0.1524" layer="91"/>
 <label x="455.93" y="120.65" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="162.56" y1="-38.1" x2="160.02" y2="-38.1" width="0.1524" layer="91"/>
+<label x="160.02" y="-38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -19412,6 +19517,12 @@ SJ4: select address of Temperature Sensor</text>
 <wire x1="415.29" y1="128.27" x2="415.29" y2="130.81" width="0.1524" layer="91"/>
 <junction x="415.29" y="130.81"/>
 </segment>
+<segment>
+<wire x1="193.04" y1="-30.48" x2="193.04" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VCC"/>
+<wire x1="193.04" y1="-38.1" x2="190.5" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="+3V14" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -19474,6 +19585,11 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="U4" gate="G$1" pin="SCL/SCLK"/>
 <wire x1="453.39" y1="123.19" x2="455.93" y2="123.19" width="0.1524" layer="91"/>
 <label x="455.93" y="123.19" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="SCL"/>
+<wire x1="162.56" y1="-40.64" x2="160.02" y2="-40.64" width="0.1524" layer="91"/>
+<label x="160.02" y="-40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ADC" class="0">
