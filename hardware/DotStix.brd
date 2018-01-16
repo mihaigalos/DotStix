@@ -8,16 +8,16 @@
 </settings>
 <grid distance="0.00254" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -41,7 +41,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -1661,8 +1661,8 @@
 <rectangle x1="10.0457" y1="9.8679" x2="10.9601" y2="9.8933" layer="22" rot="R180"/>
 <rectangle x1="9.1059" y1="9.8679" x2="9.7917" y2="9.8933" layer="22" rot="R180"/>
 <rectangle x1="7.4803" y1="9.8679" x2="8.6487" y2="9.8933" layer="22" rot="R180"/>
-<text x="4.7650375" y="44.0436" size="1.27" layer="22" rot="MR270" align="center">Mihai Galos</text>
-<text x="9.6774" y="11.4046" size="1.016" layer="22" rot="MR0" align="center">DotStix v0.3.1</text>
+<text x="4.983478125" y="43.2206375" size="1.27" layer="22" rot="MR270" align="center">Mihai Galos</text>
+<text x="9.6774" y="11.4046" size="1.016" layer="22" rot="MR0" align="center">DotStix v0.4.1</text>
 <circle x="17.2974" y="30.7848" radius="0.193440625" width="0.1524" layer="21"/>
 <circle x="17.27961875" y="30.7848" radius="0.071840625" width="0.1524" layer="21"/>
 <wire x1="16.572734375" y1="47.2990375" x2="16.732990625" y2="47.070165625" width="0.1524" layer="21"/>
@@ -1679,7 +1679,7 @@
 <wire x1="17.0346625" y1="47.4364375" x2="17.040903125" y2="47.4718125" width="0.1524" layer="21"/>
 <dimension x1="19.99" y1="50.0026" x2="20.0916" y2="0" x3="35.939746875" y3="25.033603125" textsize="1.778" layer="47"/>
 <dimension x1="0" y1="0" x2="20.0154" y2="0" x3="10.0077" y3="-3.2766" textsize="1.778" layer="47"/>
-<text x="3.0226" y="44.0436" size="1.016" layer="22" rot="MR270" align="center">01/2018</text>
+<text x="2.481578125" y="21.714459375" size="1.016" layer="22" rot="SMR270" align="center">01/2018</text>
 <text x="2.489203125" y="17.579340625" size="1.016" layer="21" rot="SR90" align="center">HexID</text>
 <rectangle x1="1.320803125" y1="20.500340625" x2="3.759203125" y2="24.919940625" layer="21"/>
 <text x="-0.06858125" y="59.93891875" size="1.778" layer="48">If you plan on potting the board in transparent epoxy, the battery's max cycle count ist 1000.
@@ -5311,6 +5311,12 @@ design rules under a new name.</description>
 <attribute name="MF" value="On Semiconductor" x="16.751303125" y="49.049940625" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="24C00T-E/ST" x="16.751303125" y="49.049940625" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
+<element name="TP5" library="testpad" package="TP20SQ" value="TPTP20SQ" x="2.999740625" y="39.176959375" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="2.999740625" y="39.176959375" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP6" library="testpad" package="TP20SQ" value="TPTP20SQ" x="2.997203125" y="47.1703375" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="2.997203125" y="47.1703375" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -5504,7 +5510,6 @@ design rules under a new name.</description>
 <wire x1="10.67815625" y1="45.405040625" x2="11.153134375" y2="45.88001875" width="0.1524" layer="16"/>
 <wire x1="11.153134375" y1="45.88001875" x2="12.311378125" y2="45.88001875" width="0.1524" layer="16"/>
 <via x="10.71371875" y="41.018459375" extent="1-16" drill="0.3"/>
-<via x="9.657078125" y="40.07611875" extent="1-16" drill="0.3"/>
 <via x="8.27531875" y="38.940740625" extent="1-16" drill="0.3"/>
 <via x="7.556496875" y="38.05428125" extent="1-16" drill="0.3"/>
 <via x="6.04011875" y="37.053521875" extent="1-16" drill="0.3"/>
@@ -5614,9 +5619,10 @@ design rules under a new name.</description>
 <wire x1="10.40638125" y1="45.405040625" x2="9.99998125" y2="44.998640625" width="0.1524" layer="1"/>
 <wire x1="9.99998125" y1="44.998640625" x2="9.99998125" y2="43.703240625" width="0.1524" layer="1"/>
 <wire x1="9.99998125" y1="43.703240625" x2="9.8171" y2="43.520359375" width="0.1524" layer="1"/>
+<via x="13.6677375" y="40.44441875" extent="1-16" drill="0.3"/>
+<contactref element="TP5" pad="TP"/>
 <wire x1="5.67181875" y1="28.915359375" x2="5.6896" y2="29.911040625" width="0" layer="19" extent="1-1"/>
 <wire x1="5.65911875" y1="24.003" x2="5.656578125" y2="24.983440625" width="0" layer="19" extent="1-1"/>
-<via x="13.6677375" y="40.44441875" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="27"/>
@@ -5759,6 +5765,26 @@ design rules under a new name.</description>
 <wire x1="17.447259375" y1="20.685759375" x2="17.2974" y2="20.5359" width="0.1524" layer="1"/>
 <wire x1="17.2974" y1="20.5359" x2="17.2974" y2="18.0594" width="0.1524" layer="1"/>
 <wire x1="17.2974" y1="18.0594" x2="17.526" y2="17.8308" width="0.1524" layer="1"/>
+<contactref element="TP6" pad="TP"/>
+<wire x1="18.288" y1="38.1508" x2="19.09571875" y2="38.1508" width="0.1524" layer="1"/>
+<wire x1="19.09571875" y1="38.1508" x2="19.7231" y2="38.77818125" width="0.1524" layer="1"/>
+<wire x1="19.7231" y1="38.77818125" x2="19.7231" y2="46.51501875" width="0.1524" layer="1"/>
+<wire x1="19.7231" y1="46.51501875" x2="19.3802" y2="46.85791875" width="0.1524" layer="1"/>
+<wire x1="19.3802" y1="46.85791875" x2="16.700503125" y2="46.85791875" width="0.1524" layer="1"/>
+<wire x1="16.700503125" y1="46.85791875" x2="16.322040625" y2="47.23638125" width="0.1524" layer="1"/>
+<wire x1="16.322040625" y1="47.23638125" x2="15.095221875" y2="47.23638125" width="0.1524" layer="1"/>
+<wire x1="15.095221875" y1="47.23638125" x2="14.798040625" y2="46.9392" width="0.1524" layer="1"/>
+<wire x1="14.798040625" y1="46.9392" x2="14.798040625" y2="46.548040625" width="0.1524" layer="1"/>
+<wire x1="14.798040625" y1="46.548040625" x2="9.96188125" y2="41.7169625" width="0.1524" layer="1"/>
+<wire x1="9.96188125" y1="41.7169625" x2="9.96188125" y2="40.060878125" width="0.1524" layer="1"/>
+<wire x1="9.96188125" y1="40.060878125" x2="9.966959375" y2="40.0558" width="0.1524" layer="1"/>
+<via x="9.966959375" y="40.0558" extent="1-16" drill="0.3"/>
+<wire x1="9.966959375" y1="40.0558" x2="6.733540625" y2="40.0558" width="0.1524" layer="16"/>
+<wire x1="6.733540625" y1="40.0558" x2="6.1341" y2="40.655240625" width="0.1524" layer="16"/>
+<wire x1="6.1341" y1="40.655240625" x2="6.1341" y2="46.248321875" width="0.1524" layer="16"/>
+<wire x1="6.1341" y1="46.248321875" x2="5.33908125" y2="47.043340625" width="0.1524" layer="16"/>
+<wire x1="5.33908125" y1="47.043340625" x2="3.1242" y2="47.043340625" width="0.1524" layer="16"/>
+<wire x1="3.1242" y1="47.043340625" x2="2.997203125" y2="47.1703375" width="0.1524" layer="16"/>
 </signal>
 <signal name="RSEL">
 <contactref element="U$1" pad="SEL"/>

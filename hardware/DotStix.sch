@@ -19104,6 +19104,8 @@ package type ST</description>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="IC1" library="CAT24M01YI" deviceset="CAT24M01" device="TS" technology="0"/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
+<part name="TP5" library="testpad" deviceset="TP" device="TP20SQ"/>
+<part name="TP6" library="testpad" deviceset="TP" device="TP20SQ"/>
 </parts>
 <sheets>
 <sheet>
@@ -19201,6 +19203,8 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="SUPPLY9" gate="GND" x="193.04" y="-50.8"/>
 <instance part="IC1" gate="G$1" x="175.26" y="-43.18"/>
 <instance part="+3V14" gate="G$1" x="193.04" y="-27.94"/>
+<instance part="TP5" gate="G$1" x="114.3" y="55.88" rot="R270"/>
+<instance part="TP6" gate="G$1" x="114.3" y="66.04" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -19243,6 +19247,9 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="TP3" gate="G$1" pin="TP"/>
 <wire x1="91.44" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 <junction x="78.74" y="55.88"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<wire x1="111.76" y1="55.88" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
+<junction x="91.44" y="55.88"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
@@ -19367,6 +19374,11 @@ SJ4: select address of Temperature Sensor</text>
 <junction x="68.58" y="148.59"/>
 <pinref part="RN1" gate="A" pin="1"/>
 <wire x1="72.39" y1="148.59" x2="68.58" y2="148.59" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TP6" gate="G$1" pin="TP"/>
+<wire x1="111.76" y1="66.04" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
+<label x="111.76" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RSEL" class="0">
