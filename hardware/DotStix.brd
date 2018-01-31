@@ -41,7 +41,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -5285,7 +5285,7 @@ design rules under a new name.</description>
 <element name="Y2" library="SparkFun-Clocks" package="CRYSTAL-SMD-3.2X1.5MM" value="" x="15.4914625" y="21.800821875" rot="R180"/>
 <element name="C7" library="rcl" package="C0603" value="7pF" x="16.461740625" y="18.752821875" rot="R270"/>
 <element name="C9" library="rcl" package="C0603" value="7pF" x="14.452603125" y="18.7833" rot="R270"/>
-<element name="R5" library="resistor" package="R0603" value="&gt;1MΩ" x="16.5633375" y="15.10538125" rot="R270"/>
+<element name="R5" library="resistor" package="R0603" value="470kΩ" x="16.5633375" y="15.10538125" rot="R270"/>
 <element name="C6" library="adafruit" package="C3216" value="100uF 4V" x="7.406640625" y="19.2684375" rot="R90"/>
 <element name="SJ1" library="SparkFun" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="7.27201875" y="23.395940625" rot="MR0"/>
 <element name="U$3" library="pusbbutton_4x2_5" package="PUSHBUTTON_4X2.5" value="PUSHBUTTON_4X2.5" x="18.39468125" y="3.1115" rot="R270"/>

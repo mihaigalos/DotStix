@@ -19076,7 +19076,7 @@ package type ST</description>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="7pF"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="7pF"/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="&gt;1MΩ"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="470kΩ"/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
@@ -19125,7 +19125,7 @@ SJ4: select address of Temperature Sensor</text>
 <wire x1="312.42" y1="93.98" x2="312.42" y2="12.7" width="0.1524" layer="95" style="longdash"/>
 <wire x1="312.42" y1="190.5" x2="312.42" y2="109.22" width="0.1524" layer="95" style="longdash"/>
 <text x="364.49" y="163.83" size="1.778" layer="91">Sensor</text>
-<text x="69.85" y="81.28" size="1.778" layer="91">Using external weak pullup for really low current</text>
+<text x="64.77" y="81.28" size="1.778" layer="91">See sheet #2 for info on how to choose the pullup value.</text>
 <text x="407.67" y="171.45" size="1.016" layer="91" align="center">TMP102 or TMP112 (high acc +/-0.5°)</text>
 <wire x1="129.54" y1="-2.54" x2="129.54" y2="-83.82" width="0.1524" layer="95" style="longdash"/>
 <wire x1="223.52" y1="-5.08" x2="223.52" y2="-86.36" width="0.1524" layer="95" style="longdash"/>
@@ -19808,6 +19808,29 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="2.54" y="5.08" size="1.778" layer="91">How to calculate the maximum pullup value:
+
+The input leakage current needs to be considered, since it is the one dictating the low or high input value of the pin.
+Typically, it's 1uA. 
+
+The voltage drop on the pullup, however, should be within the range of 0.6-0.7VDD. 
+
+Worst case : 1.8V-0.7*1.8V = 0.54V. So we need a minimum drop of 0.54V for the pullup to allow a minimum
+current to flow into the port at 1uA.
+
+R = U/I, meaning R=0.54V / 0.000001A = 540kΩ. We can thus opt for 470kΩ.
+
+Source: https://electronics.stackexchange.com/a/23647/151225</text>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
