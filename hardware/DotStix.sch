@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -202,62 +202,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-8" y="2" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-8" y="-2" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="SJ_2S">
-<description>Small solder jumper with big paste layer so it will short during reflow.</description>
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.1524" layer="21"/>
-<wire x1="0.8" y1="1" x2="1.1" y2="0.75" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="0.75" x2="-0.8" y2="1" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="-0.75" x2="-0.8" y2="-1" width="0.1524" layer="21" curve="90.114706"/>
-<wire x1="0.8" y1="-1" x2="1.1" y2="-0.75" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.1" y1="-0.75" x2="1.1" y2="0.75" width="0.1524" layer="21"/>
-<wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.1524" layer="21"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.1524" layer="21"/>
-<smd name="1" x="-0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
-<smd name="2" x="0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
-<text x="-0.9498" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9498" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.2192" y1="-1.143" x2="1.2192" y2="1.143" layer="31"/>
-</package>
-<package name="SJ_2S-TRACE">
-<description>Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.</description>
-<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="-0.381" y1="0" x2="0.381" y2="0" width="0.2032" layer="1"/>
-<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="SJ_2S-NOTRACE">
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90.076445"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90.03821"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90.03821"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90.03821"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.4009" y="0" dx="0.635" dy="1.27" layer="1" rot="R180" cream="no"/>
-<smd name="2" x="0.4127" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" layer="31"/>
-</package>
-<package name="SJ_2S-NO">
-<description>Small solder jumper with no paste layer so it will open after reflow.</description>
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 <package name="SOT563">
 <wire x1="0.8" y1="-0.6" x2="0.8" y2="0.6" width="0.127" layer="21"/>
 <wire x1="-0.8" y1="-0.6" x2="-0.8" y2="0.6" width="0.127" layer="21"/>
@@ -291,16 +235,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
 <pin name="C" x="5.08" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="SJ">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 <symbol name="TMP102">
 <wire x1="-10.16" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -336,51 +270,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <connects>
 <connect gate="G$1" pin="A" pad="+"/>
 <connect gate="G$1" pin="C" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOLDERJUMPER" prefix="SJ">
-<description>&lt;b&gt;Solder Jumper&lt;/b&gt;
-Standard SMD solder jumper. Used to automate production. Two varients : Normally Open and Normally Closed are the same, but have different paste layers. NC will have a large amount of paste and should jumper during reflow.</description>
-<gates>
-<gate name="1" symbol="SJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="NC" package="SJ_2S">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TRACE" package="SJ_2S-TRACE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NC2" package="SJ_2S-NOTRACE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NO" package="SJ_2S-NO">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19083,7 +18972,6 @@ package type ST</description>
 <part name="C6" library="adafruit" deviceset="C-US" device="C3216" value="100uF 4V"/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
-<part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="U$3" library="pusbbutton_4x2_5" deviceset="PUSHBUTTON_4X2.5" device=""/>
 <part name="RN1" library="resistor-dil" deviceset="4R-N" device="0402ARV341" value="4.7kΩ"/>
 <part name="RN2" library="resistor-dil" deviceset="4R-N" device="0402ARV341"/>
@@ -19176,7 +19064,6 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="C6" gate="G$1" x="276.86" y="157.48"/>
 <instance part="+3V11" gate="G$1" x="97.79" y="156.21"/>
 <instance part="SUPPLY19" gate="GND" x="68.58" y="167.64" rot="R180"/>
-<instance part="SJ1" gate="1" x="88.9" y="148.59"/>
 <instance part="U$3" gate="G$1" x="68.58" y="158.75" rot="R90"/>
 <instance part="RN1" gate="A" x="77.47" y="148.59"/>
 <instance part="RN1" gate="B" x="77.47" y="143.51"/>
@@ -19502,12 +19389,12 @@ SJ4: select address of Temperature Sensor</text>
 <wire x1="82.55" y1="138.43" x2="97.79" y2="138.43" width="0.1524" layer="91"/>
 <junction x="97.79" y="138.43"/>
 <wire x1="82.55" y1="133.35" x2="97.79" y2="133.35" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="1" pin="2"/>
-<wire x1="93.98" y1="148.59" x2="97.79" y2="148.59" width="0.1524" layer="91"/>
 <junction x="97.79" y="148.59"/>
 <pinref part="RN1" gate="B" pin="2"/>
 <pinref part="RN1" gate="C" pin="2"/>
 <pinref part="RN1" gate="D" pin="2"/>
+<pinref part="RN1" gate="A" pin="2"/>
+<wire x1="97.79" y1="148.59" x2="82.55" y2="148.59" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
@@ -19765,13 +19652,6 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="U1" gate="G$1" pin="PB0(ICP/CLKO/PCINT0)"/>
 <wire x1="195.58" y1="86.36" x2="198.12" y2="86.36" width="0.1524" layer="91"/>
 <label x="198.12" y="86.36" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="SJ1" gate="1" pin="1"/>
-<wire x1="83.82" y1="148.59" x2="82.55" y2="148.59" width="0.1524" layer="91"/>
-<pinref part="RN1" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="INT_MULTIPLE" class="0">
