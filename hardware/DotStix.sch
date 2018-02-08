@@ -19041,8 +19041,8 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="TP2" gate="G$1" x="81.28" y="66.04" rot="R270"/>
 <instance part="SUPPLY5" gate="GND" x="76.2" y="53.34"/>
 <instance part="D1" gate="G$1" x="1.27" y="40.64" rot="R270"/>
-<instance part="D2" gate="G$1" x="17.78" y="43.18" rot="R90"/>
-<instance part="SUPPLY8" gate="GND" x="17.78" y="35.56"/>
+<instance part="D2" gate="G$1" x="30.48" y="43.18" rot="R90"/>
+<instance part="SUPPLY8" gate="GND" x="30.48" y="35.56"/>
 <instance part="D3" gate="G$1" x="25.4" y="45.72"/>
 <instance part="+3V9" gate="G$1" x="36.83" y="53.34"/>
 <instance part="SUPPLY10" gate="GND" x="1.27" y="31.75"/>
@@ -19141,7 +19141,7 @@ SJ4: select address of Temperature Sensor</text>
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<wire x1="17.78" y1="38.1" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="40.64" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -19366,9 +19366,12 @@ SJ4: select address of Temperature Sensor</text>
 </segment>
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="27.94" y1="45.72" x2="36.83" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="30.48" y1="45.72" x2="36.83" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="36.83" y1="50.8" x2="36.83" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<junction x="30.48" y="45.72"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -19519,16 +19522,6 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="U1" gate="G$1" pin="PD1(TXD/PCINT17)"/>
 <wire x1="195.58" y1="35.56" x2="198.12" y2="35.56" width="0.1524" layer="91"/>
 <label x="198.12" y="35.56" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="SOLAR_RAW" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="17.78" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="D3" gate="G$1" pin="A"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="1.27" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
-<junction x="17.78" y="45.72"/>
 </segment>
 </net>
 <net name="LIGHT_SENSE" class="0">
@@ -19686,6 +19679,13 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="U4" gate="G$1" pin="REGOUT"/>
 <wire x1="417.83" y1="120.65" x2="407.67" y2="120.65" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="22.86" y1="45.72" x2="1.27" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
