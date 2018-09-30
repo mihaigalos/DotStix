@@ -30,7 +30,7 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
@@ -41,7 +41,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -1679,7 +1679,7 @@
 <wire x1="17.0346625" y1="47.4364375" x2="17.040903125" y2="47.4718125" width="0.1524" layer="21"/>
 <dimension x1="19.99" y1="50.0026" x2="20.0916" y2="0" x3="35.939746875" y3="25.033603125" textsize="1.778" layer="47"/>
 <dimension x1="0" y1="0" x2="20.0154" y2="0" x3="10.0077" y3="-3.2766" textsize="1.778" layer="47"/>
-<text x="2.557784375" y="21.775421875" size="1.016" layer="22" rot="SMR90" align="center">01/2018</text>
+<text x="2.557784375" y="21.775421875" size="1.016" layer="22" rot="SMR90" align="center">11/2018</text>
 <text x="2.489203125" y="17.579340625" size="1.016" layer="21" rot="SR90" align="center">HexID</text>
 <rectangle x1="1.320803125" y1="20.500340625" x2="3.759203125" y2="24.919940625" layer="21"/>
 <text x="3.3147" y="6.860540625" size="1.778" layer="21">+</text>
@@ -1687,7 +1687,6 @@
 <text x="9.4615" y="4.17321875" size="1.778" layer="21">-</text>
 <text x="7.80288125" y="16.499840625" size="0.8128" layer="21" align="center">+</text>
 <rectangle x1="10.868659375" y1="24.42971875" x2="16.22298125" y2="29.86531875" layer="43"/>
-<text x="-11.34871875" y="52.53481875" size="1.778" layer="37">If SI1145, VCC from pin (3.5mA), no sleep</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -3897,12 +3896,6 @@ design rules under a new name.</description>
 <contactref element="U1" pad="26"/>
 <wire x1="10.612115625" y1="28.3718" x2="11.069315625" y2="28.3718" width="0.1524" layer="1"/>
 <wire x1="10.2108" y1="28.8036" x2="10.612115625" y2="28.3718" width="0.1524" layer="1"/>
-<wire x1="10.2108" y1="30.1752" x2="10.2108" y2="28.8036" width="0.1524" layer="1"/>
-<wire x1="10.0584" y1="30.3276" x2="10.2108" y2="30.1752" width="0.1524" layer="1"/>
-<wire x1="10.3632" y1="30.6324" x2="10.0584" y2="30.3276" width="0.1524" layer="1"/>
-<wire x1="10.3632" y1="30.7848" x2="10.3632" y2="30.6324" width="0.1524" layer="1"/>
-<wire x1="10.9728" y1="31.3944" x2="10.3632" y2="30.7848" width="0.1524" layer="1"/>
-<wire x1="11.1252" y1="31.3944" x2="10.9728" y2="31.3944" width="0.1524" layer="1"/>
 <wire x1="11.2776" y1="31.5468" x2="11.1252" y2="31.3944" width="0.1524" layer="1"/>
 <wire x1="11.2776" y1="33.334959375" x2="11.2776" y2="31.5468" width="0.1524" layer="1"/>
 <wire x1="11.069315625" y1="28.3718" x2="11.081378125" y2="28.379740625" width="0.1524" layer="1"/>
@@ -3914,6 +3907,10 @@ design rules under a new name.</description>
 <wire x1="13.911578125" y1="35.316159375" x2="14.13001875" y2="35.09771875" width="0.1524" layer="1"/>
 <wire x1="14.13001875" y1="35.09771875" x2="14.13001875" y2="32.44278125" width="0.1524" layer="1"/>
 <wire x1="14.13001875" y1="32.44278125" x2="14.3058" y2="32.267" width="0.1524" layer="1"/>
+<wire x1="11.1252" y1="31.3944" x2="11.1252" y2="30.398721875" width="0.1524" layer="1"/>
+<wire x1="11.1252" y1="30.398721875" x2="10.208259375" y2="29.48178125" width="0.1524" layer="1"/>
+<wire x1="10.208259375" y1="29.48178125" x2="10.208259375" y2="28.806140625" width="0.1524" layer="1"/>
+<wire x1="10.208259375" y1="28.806140625" x2="10.2108" y2="28.8036" width="0.1524" layer="1"/>
 </signal>
 <signal name="RSCK">
 <contactref element="U$1" pad="SCK"/>
@@ -4562,18 +4559,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="LIGHT_SENSE_ENA">
 <contactref element="U1" pad="25"/>
-<wire x1="11.43" y1="29.2608" x2="11.1252" y2="28.956" width="0.1524" layer="1"/>
-<wire x1="11.43" y1="30.0228" x2="11.43" y2="29.2608" width="0.1524" layer="1"/>
-<wire x1="11.1252" y1="30.3276" x2="11.43" y2="30.0228" width="0.1524" layer="1"/>
-<wire x1="6.858" y1="34.5948" x2="11.1252" y2="30.3276" width="0.1524" layer="16"/>
-<wire x1="6.858" y1="37.7952" x2="6.858" y2="34.5948" width="0.1524" layer="16"/>
-<wire x1="5.7912" y1="38.862" x2="6.858" y2="37.7952" width="0.1524" layer="16"/>
-<wire x1="5.334" y1="38.862" x2="5.7912" y2="38.862" width="0.1524" layer="16"/>
-<wire x1="3.81" y1="37.338" x2="5.334" y2="38.862" width="0.1524" layer="16"/>
-<wire x1="3.81" y1="35.5092" x2="3.81" y2="37.338" width="0.1524" layer="16"/>
-<wire x1="3.048" y1="34.7472" x2="3.81" y2="35.5092" width="0.1524" layer="16"/>
-<wire x1="11.1252" y1="28.956" x2="11.081378125" y2="28.879740625" width="0.1524" layer="1"/>
-<via x="11.1252" y="30.3276" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="LED_BLUE">
 <contactref element="U1" pad="13"/>
@@ -5267,9 +5252,9 @@ design rules under a new name.</description>
 <approved hash="6,16,aa77e3f297ed1fe9"/>
 <approved hash="6,16,cf83c7d633a2bbe5"/>
 <approved hash="6,16,90afbdca5a3df13d"/>
-<approved hash="6,16,6c76d8772e1f939f"/>
-<approved hash="6,16,d39b05fd3519be98"/>
 <approved hash="6,16,ddc0598ac36d1739"/>
+<approved hash="6,16,d39b05fd3519be98"/>
+<approved hash="6,16,6c76d8772e1f939f"/>
 <approved hash="6,16,05fa0db40dea05a4"/>
 <approved hash="6,16,8313979d97e1836f"/>
 <approved hash="6,16,31a0827a80de3304"/>
@@ -5296,10 +5281,10 @@ design rules under a new name.</description>
 <approved hash="19,16,9b6f27cb257799d3"/>
 <approved hash="19,16,7dd547c97950434c"/>
 <approved hash="19,16,6c265ac258286ecc"/>
+<approved hash="19,16,e4f4dc85348d3d08"/>
 <approved hash="19,16,50d8b1c6b6785766"/>
 <approved hash="19,16,d140564a53eed4e4"/>
 <approved hash="19,16,d1bcf38718827f79"/>
-<approved hash="19,16,e4f4dc85348d3d08"/>
 <approved hash="19,16,ff3f57d788467336"/>
 </errors>
 </board>
