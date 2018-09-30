@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6079,64 +6079,6 @@ Metric Code Size 5664</description>
 <rectangle x1="-2.8" y1="-3.15" x2="-2.2" y2="3.15" layer="51"/>
 <rectangle x1="2.2" y1="-3.15" x2="2.8" y2="3.15" layer="51"/>
 </package>
-<package name="SOT23-W">
-<description>&lt;b&gt;SOT23&lt;/b&gt; - Wave soldering</description>
-<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.5724" y1="-0.6604" x2="-1.5724" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.5724" y1="-0.6604" x2="-1.5724" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.5724" y1="0.6604" x2="1.5724" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.5724" y1="-0.3984" x2="-1.5724" y2="0.6604" width="0.1524" layer="21"/>
-<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.3984" width="0.1524" layer="21"/>
-<wire x1="0.2954" y1="-0.6604" x2="-0.3094" y2="-0.6604" width="0.1524" layer="21"/>
-<smd name="3" x="0" y="1.3" dx="2.8" dy="1.4" layer="1"/>
-<smd name="2" x="1.1" y="-1.3" dx="1.2" dy="1.4" layer="1"/>
-<smd name="1" x="-1.1" y="-1.3" dx="1.2" dy="1.4" layer="1"/>
-<text x="2.032" y="0.254" size="0.4064" layer="25">&gt;NAME</text>
-<text x="2.032" y="-0.508" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
-<package name="SOT23">
-<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
-<package name="TO220V">
-<description>&lt;b&gt;TO 200 vertical&lt;/b&gt;</description>
-<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.127" layer="21"/>
-<circle x="-4.4958" y="-3.7084" radius="0.254" width="0.127" layer="21"/>
-<pad name="1" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="-6.0452" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.175" y="-3.175" size="1.27" layer="51" ratio="10">1</text>
-<text x="-0.635" y="-3.175" size="1.27" layer="51" ratio="10">2</text>
-<text x="1.905" y="-3.175" size="1.27" layer="51" ratio="10">3</text>
-<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
-<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
-<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
-<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
-<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
-<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
-<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="3V">
@@ -6175,46 +6117,6 @@ Metric Code Size 5664</description>
 <text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-<symbol name="MOSFET-N">
-<wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="2.54" x2="0.762" y2="1.905" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="-1.905" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.175" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="4.572" y1="0.762" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.508" x2="3.048" y2="0.254" width="0.1524" layer="94"/>
-<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
-<text x="5.08" y="0.635" size="1.27" layer="95">&gt;NAME</text>
-<text x="5.08" y="-1.27" size="1.27" layer="96">&gt;VALUE</text>
-<text x="3.175" y="3.175" size="0.8128" layer="93">D</text>
-<text x="3.175" y="-3.81" size="0.8128" layer="93">S</text>
-<text x="-1.27" y="-1.905" size="0.8128" layer="93">G</text>
-<pin name="G" x="-2.54" y="-2.54" visible="pad" length="short"/>
-<pin name="S" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
-<pin name="D" x="2.54" y="5.08" visible="pad" length="short" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="3.81" y="0.508"/>
-<vertex x="3.302" y="-0.254"/>
-<vertex x="4.318" y="-0.254"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="1.016" y="0"/>
-<vertex x="2.032" y="0.762"/>
-<vertex x="2.032" y="-0.762"/>
-</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -7012,48 +6914,6 @@ Note the THM package has the ground pads on both sides of the PCB so that the ma
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MOSFET-N" prefix="Q" uservalue="yes">
-<description>&lt;b&gt;N-Channel Mosfet&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;2N7002E - 60V 260mA SOT23 [Digikey: 2N7002ET1GOSTR-ND] - &lt;b&gt;REEL&lt;/b&gt;&lt;/li&gt;
-&lt;li&gt;BSH103 - 30V 850mA SOT23 [Digikey: 568-5013-1-ND]&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="MOSFET-N" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="WAVE" package="SOT23-W">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="REFLOW" package="SOT23">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="GDS_TO220V" package="TO220V">
-<connects>
-<connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14207,7 +14067,6 @@ package type ST</description>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="U$1" library="rfm12b_withoutPlanes" deviceset="RFM12B/69CW" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="LOGO1" library="Particle-Devices" deviceset="OSHW-LOGO" device="S"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
@@ -14229,7 +14088,6 @@ package type ST</description>
 <part name="TP4" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="470kΩ"/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="C6" library="adafruit" deviceset="C-US" device="C3216" value="100uF 4V"/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
@@ -14245,7 +14103,6 @@ package type ST</description>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 <part name="TP5" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="TP6" library="testpad" deviceset="TP" device="TP20SQ"/>
-<part name="Q2" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="BSH103"/>
 <part name="U$4" library="pusbbutton_4x2_5" deviceset="PUSHBUTTON_4X2.5" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 </parts>
@@ -14272,6 +14129,8 @@ SJ4: select address of Temperature Sensor</text>
 <wire x1="223.52" y1="-5.08" x2="223.52" y2="-86.36" width="0.1524" layer="95" style="longdash"/>
 <text x="167.64" y="-81.28" size="3.81" layer="95">Storage</text>
 <text x="386.08" y="173.99" size="1.27" layer="91">TMP112 needs VCC from MCU I/O. (reduces draw from 7uA -&gt; ? nA)</text>
+<text x="124.46" y="226.06" size="5.08" layer="91">Set MOSFET Gate low to avoid floating.</text>
+<text x="109.22" y="218.44" size="5.08" layer="91">Slowly charge the 100uF cap before turning on the Radio</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="170.18" y="60.96"/>
@@ -14280,7 +14139,6 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="SUPPLY6" gate="GND" x="259.08" y="35.56"/>
 <instance part="U$1" gate="G$1" x="261.62" y="58.42"/>
 <instance part="+3V4" gate="G$1" x="147.32" y="55.88"/>
-<instance part="+3V5" gate="G$1" x="261.62" y="83.82"/>
 <instance part="LOGO1" gate="G$1" x="177.8" y="175.26"/>
 <instance part="+3V2" gate="G$1" x="142.24" y="76.2" rot="R90"/>
 <instance part="+3V3" gate="G$1" x="12.7" y="160.02"/>
@@ -14302,7 +14160,6 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="TP4" gate="G$1" x="93.98" y="66.04" rot="R270"/>
 <instance part="R5" gate="G$1" x="78.74" y="71.12" rot="R90"/>
 <instance part="+3V8" gate="G$1" x="78.74" y="78.74"/>
-<instance part="+3V10" gate="G$1" x="297.18" y="180.34"/>
 <instance part="SUPPLY16" gate="GND" x="297.18" y="152.4"/>
 <instance part="C6" gate="G$1" x="297.18" y="160.02"/>
 <instance part="+3V11" gate="G$1" x="97.79" y="156.21"/>
@@ -14324,7 +14181,6 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="+3V14" gate="G$1" x="193.04" y="-27.94"/>
 <instance part="TP5" gate="G$1" x="114.3" y="55.88" rot="R270"/>
 <instance part="TP6" gate="G$1" x="114.3" y="66.04" rot="R270"/>
-<instance part="Q2" gate="G$1" x="294.64" y="170.18"/>
 <instance part="U$4" gate="G$1" x="355.6" y="72.39" rot="R90"/>
 <instance part="SUPPLY8" gate="GND" x="355.6" y="80.01" rot="R180"/>
 </instances>
@@ -14524,10 +14380,6 @@ SJ4: select address of Temperature Sensor</text>
 <junction x="147.32" y="53.34"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
-<pinref part="+3V5" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="AVCC"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="144.78" y1="76.2" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
@@ -14584,11 +14436,6 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <wire x1="193.04" y1="-38.1" x2="190.5" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="+3V14" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="297.18" y1="177.8" x2="297.18" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -14779,23 +14626,22 @@ SJ4: select address of Temperature Sensor</text>
 <label x="392.43" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="C6" gate="G$1" pin="1"/>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="297.18" y1="165.1" x2="297.18" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VCC_100UF_CAP" class="0">
-<segment>
-<pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="292.1" y1="167.64" x2="289.56" y2="167.64" width="0.1524" layer="91"/>
-<label x="289.56" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2/PCINT7)"/>
 <wire x1="195.58" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
 <label x="198.12" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="297.18" y1="162.56" x2="297.18" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="167.64" x2="292.1" y2="167.64" width="0.1524" layer="91"/>
+<label x="292.1" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="261.62" y1="81.28" x2="261.62" y2="86.36" width="0.1524" layer="91"/>
+<label x="261.62" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PUSH" class="0">
@@ -14839,8 +14685,9 @@ Source: https://electronics.stackexchange.com/a/23647/151225</text>
 <errors>
 <approved hash="101,1,-10.16,135.89,RN2D,1,,,,"/>
 <approved hash="101,1,-10.16,146.05,RN2D,2,,,,"/>
-<approved hash="104,1,261.62,81.28,U$1,VCC,+3V3,,,"/>
+<approved hash="104,1,261.62,81.28,U$1,VCC,VCC_100UF_CAP,,,"/>
 <approved hash="104,1,261.62,40.64,U$1,GND1,GND,,,"/>
+<approved hash="104,1,190.5,-38.1,IC1,VCC,+3V3,,,"/>
 <approved hash="106,1,147.32,66.04,ADC,,,,,"/>
 <approved hash="106,1,276.86,68.58,ANT,,,,,"/>
 <approved hash="113,1,260.35,155.503,U$2,,,,,"/>
