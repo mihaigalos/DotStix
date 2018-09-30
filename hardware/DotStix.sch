@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14246,6 +14246,8 @@ package type ST</description>
 <part name="TP5" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="TP6" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="Q2" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="BSH103"/>
+<part name="U$4" library="pusbbutton_4x2_5" deviceset="PUSHBUTTON_4X2.5" device=""/>
+<part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14323,6 +14325,8 @@ SJ4: select address of Temperature Sensor</text>
 <instance part="TP5" gate="G$1" x="114.3" y="55.88" rot="R270"/>
 <instance part="TP6" gate="G$1" x="114.3" y="66.04" rot="R270"/>
 <instance part="Q2" gate="G$1" x="294.64" y="170.18"/>
+<instance part="U$4" gate="G$1" x="355.6" y="72.39" rot="R90"/>
+<instance part="SUPPLY8" gate="GND" x="355.6" y="80.01" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14397,6 +14401,10 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <wire x1="190.5" y1="-48.26" x2="193.04" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -14671,13 +14679,6 @@ SJ4: select address of Temperature Sensor</text>
 <label x="198.12" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LIGHT_SENSE" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD3(INT1/OC2B/PCINT19)"/>
-<wire x1="195.58" y1="30.48" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
-<label x="198.12" y="30.48" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="LIGHT_SENSE_ENA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC2(ADC2PCINT10)"/>
@@ -14795,6 +14796,18 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2/PCINT7)"/>
 <wire x1="195.58" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
 <label x="198.12" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PUSH" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PD3(INT1/OC2B/PCINT19)"/>
+<wire x1="195.58" y1="30.48" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
+<label x="198.12" y="30.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
+<wire x1="355.6" y1="67.31" x2="351.79" y2="67.31" width="0.1524" layer="91"/>
+<label x="351.79" y="67.31" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
