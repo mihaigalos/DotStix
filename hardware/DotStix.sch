@@ -16021,6 +16021,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3"/>
+<part name="C1" library="adafruit" deviceset="C-US" device="C3216" value="100uF 4V"/>
 </parts>
 <sheets>
 <sheet>
@@ -16078,7 +16079,7 @@ valve</text>
 <instance part="TP4" gate="G$1" x="93.98" y="66.04" rot="R270"/>
 <instance part="R5" gate="G$1" x="78.74" y="71.12" rot="R90"/>
 <instance part="+3V8" gate="G$1" x="78.74" y="78.74"/>
-<instance part="SUPPLY16" gate="GND" x="297.18" y="152.4"/>
+<instance part="SUPPLY16" gate="GND" x="292.1" y="147.32"/>
 <instance part="C6" gate="G$1" x="297.18" y="160.02"/>
 <instance part="+3V11" gate="G$1" x="97.79" y="156.21"/>
 <instance part="SUPPLY19" gate="GND" x="68.58" y="167.64" rot="R180"/>
@@ -16103,6 +16104,7 @@ valve</text>
 <instance part="SUPPLY8" gate="GND" x="355.6" y="80.01" rot="R180"/>
 <instance part="+3V5" gate="G$1" x="-10.16" y="160.02"/>
 <instance part="LED1" gate="G$1" x="-10.16" y="132.08"/>
+<instance part="C1" gate="G$1" x="284.48" y="160.02"/>
 </instances>
 <busses>
 </busses>
@@ -16155,10 +16157,6 @@ valve</text>
 <wire x1="1.27" y1="35.56" x2="1.27" y2="34.29" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
 <wire x1="68.58" y1="163.83" x2="68.58" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
@@ -16181,6 +16179,16 @@ valve</text>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$2"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="284.48" y1="154.94" x2="284.48" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="SUPPLY16" gate="GND" pin="GND"/>
+<wire x1="284.48" y1="149.86" x2="292.1" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="292.1" y1="149.86" x2="297.18" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="149.86" x2="297.18" y2="154.94" width="0.1524" layer="91"/>
+<junction x="292.1" y="149.86"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -16565,8 +16573,10 @@ valve</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="162.56" x2="297.18" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="167.64" x2="292.1" y2="167.64" width="0.1524" layer="91"/>
-<label x="292.1" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="297.18" y1="167.64" x2="284.48" y2="167.64" width="0.1524" layer="91"/>
+<label x="284.48" y="167.64" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="162.56" x2="284.48" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
