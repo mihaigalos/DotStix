@@ -16045,8 +16045,10 @@ SJ4: select address of Temperature Sensor</text>
 <wire x1="223.52" y1="-5.08" x2="223.52" y2="-86.36" width="0.1524" layer="95" style="longdash"/>
 <text x="167.64" y="-81.28" size="3.81" layer="95">Storage</text>
 <text x="386.08" y="173.99" size="1.27" layer="91">TMP112 needs VCC from MCU I/O. (reduces draw from 7uA -&gt; ? nA)</text>
-<text x="124.46" y="226.06" size="5.08" layer="91">Set MOSFET Gate low to avoid floating.</text>
 <text x="109.22" y="218.44" size="5.08" layer="91">Slowly charge the 100uF cap before turning on the Radio</text>
+<text x="-27.94" y="157.48" size="1.27" layer="91">Supercap
+overvoltage
+valve</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="170.18" y="60.96"/>
@@ -16531,8 +16533,8 @@ SJ4: select address of Temperature Sensor</text>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="-10.16" y1="127" x2="-10.16" y2="124.46" width="0.1524" layer="91"/>
-<label x="-10.16" y="124.46" size="1.27" layer="95" xref="yes"/>
+<wire x1="-10.16" y1="127" x2="-10.16" y2="121.92" width="0.1524" layer="91"/>
+<label x="-10.16" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -16589,6 +16591,14 @@ SJ4: select address of Temperature Sensor</text>
 <pinref part="RN2" gate="D" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="-10.16" y1="137.16" x2="-10.16" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<wire x1="-30.48" y1="165.1" x2="-5.08" y2="165.1" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-5.08" y1="165.1" x2="-5.08" y2="116.84" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-5.08" y1="116.84" x2="-30.48" y2="116.84" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-30.48" y1="116.84" x2="-30.48" y2="165.1" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 </nets>
