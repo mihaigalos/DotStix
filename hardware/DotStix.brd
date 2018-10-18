@@ -1688,7 +1688,7 @@
 <text x="9.4615" y="4.17321875" size="1.778" layer="21">-</text>
 <text x="7.80288125" y="16.499840625" size="0.8128" layer="21" align="center">+</text>
 <rectangle x1="10.868659375" y1="24.42971875" x2="16.22298125" y2="29.86531875" layer="43"/>
-<rectangle x1="0.254" y1="11.684" x2="3.556" y2="13.462" layer="29"/>
+<rectangle x1="0.254" y1="2.794" x2="2.794" y2="5.08" layer="29"/>
 </plain>
 <libraries>
 <library name="adafruit">
