@@ -3611,10 +3611,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="8.636" y="17.9832" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="12.192" y="17.9832" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="TP7" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1" value="TPTP20SQ" x="1.8796" y="7.366" smashed="yes" rot="MR0">
-<attribute name="NAME" x="2.8796" y="8.416" size="1.27" layer="26" rot="MR0"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="1.8796" y="7.366" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="2.8956" y="6.223" size="0.0254" layer="28" rot="MR0"/>
+<element name="TP7" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1" value="TPTP20SQ" x="1.1176" y="7.4168" smashed="yes" rot="MR0">
+<attribute name="NAME" x="2.1176" y="8.4668" size="1.27" layer="26" rot="MR0"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="1.1176" y="7.4168" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="2.1336" y="6.2738" size="0.0254" layer="28" rot="MR0"/>
 </element>
 </elements>
 <signals>
@@ -4287,14 +4287,14 @@ design rules under a new name.</description>
 <via x="13.116559375" y="43.863259375" extent="1-16" drill="0.3"/>
 <wire x1="13.116559375" y1="43.863259375" x2="13.5128" y2="43.46701875" width="0.1524" layer="1"/>
 <wire x1="13.5128" y1="43.46701875" x2="13.5128" y2="41.92778125" width="0.1524" layer="1"/>
-<wire x1="1.8288" y1="7.7724" x2="2.237740625" y2="7.7724" width="0.1524" layer="1"/>
-<wire x1="2.237740625" y1="7.7724" x2="5.590540625" y2="7.7724" width="0.1524" layer="1"/>
+<wire x1="1.8288" y1="7.7724" x2="1.831340625" y2="7.7724" width="0.1524" layer="1"/>
+<wire x1="1.831340625" y1="7.7724" x2="5.590540625" y2="7.7724" width="0.1524" layer="1"/>
 <wire x1="5.590540625" y1="7.7724" x2="7.8232" y2="10.005059375" width="0.1524" layer="1"/>
 <wire x1="7.8232" y1="10.005059375" x2="14.394178125" y2="10.005059375" width="0.1524" layer="1"/>
 <wire x1="14.394178125" y1="10.005059375" x2="14.478" y2="10.08888125" width="0.1524" layer="1"/>
 <wire x1="5.890259375" y1="12.158978125" x2="3.5306" y2="9.79931875" width="0.1524" layer="1"/>
-<wire x1="3.5306" y1="9.79931875" x2="3.5306" y2="9.065259375" width="0.1524" layer="1"/>
-<wire x1="3.5306" y1="9.065259375" x2="2.237740625" y2="7.7724" width="0.1524" layer="1"/>
+<wire x1="3.5306" y1="9.79931875" x2="3.5306" y2="9.471659375" width="0.1524" layer="1"/>
+<wire x1="3.5306" y1="9.471659375" x2="1.831340625" y2="7.7724" width="0.1524" layer="1"/>
 <wire x1="18.1356" y1="30.1752" x2="18.1356" y2="30.858459375" width="0.1524" layer="1"/>
 <wire x1="18.1356" y1="30.858459375" x2="17.87651875" y2="31.117540625" width="0.1524" layer="1"/>
 <via x="17.87651875" y="31.117540625" extent="1-16" drill="0.3"/>
@@ -4384,10 +4384,10 @@ design rules under a new name.</description>
 <wire x1="19.62525625" y1="22.4953" x2="18.1230625" y2="20.99310625" width="0.1524" layer="1"/>
 <wire x1="18.1230625" y1="20.99310625" x2="17.32355" y2="20.99310625" width="0.1524" layer="1"/>
 <wire x1="19.62525625" y1="25.0038375" x2="19.62525625" y2="22.4953" width="0.1524" layer="1"/>
-<via x="1.8796" y="7.366" extent="1-16" drill="0.35"/>
-<wire x1="1.8177625" y1="7.3406" x2="1.8177625" y2="7.366" width="0.1524" layer="1"/>
-<wire x1="1.8177625" y1="7.366" x2="1.8796" y2="7.366" width="0.1524" layer="1"/>
 <contactref element="TP7" pad="TP"/>
+<wire x1="1.8177625" y1="7.3406" x2="1.1938" y2="7.3406" width="0.1524" layer="1"/>
+<wire x1="1.1938" y1="7.3406" x2="1.1176" y2="7.4168" width="0.1524" layer="1"/>
+<via x="1.1176" y="7.4168" extent="1-16" drill="0.35"/>
 <wire x1="13.081003125" y1="17.00784375" x2="13.3731" y2="17.01038125" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="MOSI">
